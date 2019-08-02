@@ -26,7 +26,7 @@ background(255);
 
 //hand.show();
 //hand.animate();
-let index = floor (0) % animation.length;
+let index = floor (1) % animation.length;
 image(animation[index],0,150,320,240);
 
 }
