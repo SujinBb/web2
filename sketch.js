@@ -17,15 +17,15 @@ createCanvas (1024,540);
   animation.push(img);
  }
 
- hand = new Sprite (animation,100,100,1);
-
+ //hand = new Sprite (animation,100,100,1 );
+console.log(animation);
 }
 
 function draw() {
 background(255);
 
-hand.show();
-hand.animate();
-//image(animation[frameCount % animation.length],0,150,320,240);
+//hand.show();
+//hand.animate();
+image(animation[frameCount % animation.length],0,150,320,240);
 
 }
