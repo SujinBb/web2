@@ -27,6 +27,6 @@ background(255);
 //hand.show();
 //hand.animate();
 
-image(animation[frameCount %animation.length],0,150,320,240);
+image(animation[frameCount % animation.length],0,150,320,240);
 
 }
