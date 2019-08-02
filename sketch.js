@@ -17,7 +17,7 @@ createCanvas (1024,540);
   animation.push(img);
  }
 
- hand = new Sprite (animation,1);
+ hand = new Sprite (animation,100,100,1);
 
 }
 
