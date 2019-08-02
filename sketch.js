@@ -6,7 +6,7 @@ let animation =[];
 
 function preload(){
   spritedata = loadJSON('handani.json');
-  spritesheet = loadImage('handanimation.png');
+  spritesheet = loadImage('handani.png');
 }
 function setup() {
 createCanvas (1024,540);
