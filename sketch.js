@@ -2,8 +2,8 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-let x =200;
-let y=200;
+var x =200;
+var y=200;
 
 function preload(){
   spritedata = loadJSON('handani.json');
