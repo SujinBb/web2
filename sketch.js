@@ -41,3 +41,4 @@ function keyPressed() {
   } else if (keyCode === LEFT_ARROW) {
     hand.dir(-1, 0);
   }
+}
