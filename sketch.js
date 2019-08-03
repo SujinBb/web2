@@ -2,8 +2,8 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-let x =500;
-let y = 500;
+let x =400;
+let y =400;
 
 
 function preload(){
@@ -32,7 +32,7 @@ background(255);
 let index = floor (frameCount / 4) % animation.length;
 image(animation[index],0,150,320,240);
   
-  if (x >= 500){
+  if (x >= 400){
    x = 0; 
   }
 }
