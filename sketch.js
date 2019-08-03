@@ -9,6 +9,7 @@ function preload(){
   spritedata = loadJSON('handani.json');
   spritesheet = loadImage('handani.png');
 }
+
 function setup() {
 createCanvas (1024,540);
  let frames = spritedata.frames;
@@ -31,6 +32,7 @@ let index = floor (frameCount / 3) % animation.length;
 image(animation[index],0,150,320,240);
 
 }
+
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
     x = x - 5;
