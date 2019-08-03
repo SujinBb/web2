@@ -28,7 +28,7 @@ background(255);
 
 //hand.show();
 //hand.animate();
-let index = floor (frameCount / 3) % animation.length;
+let index = floor (frameCount / 4) % animation.length;
 image(animation[index],0,150,320,240);
   if (x >= 400){
    x = 0; 
