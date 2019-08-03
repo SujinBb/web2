@@ -2,7 +2,8 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-
+let x =200;
+let y=200;
 
 function preload(){
   spritedata = loadJSON('handani.json');
@@ -29,4 +30,12 @@ background(255);
 let index = floor (frameCount / 3) % animation.length;
 image(animation[index],0,150,320,240);
 
+}
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    x = x - 5;
+  } else if (keyCode === RIGHT_ARROW) {
+    x = x + 5;
+  }
+  
 }
