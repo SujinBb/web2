@@ -2,7 +2,8 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-let dir;
+let x =200;
+let y =200;
 
 
 function preload(){
@@ -19,26 +20,24 @@ createCanvas (1024,540);
   animation.push(img);
  }
 
- //hand = new Sprite (animation,100,100,1 );
 console.log(animation);
 }
 
 function draw() {
 background(255);
+
 let index = floor (frameCount / 4) % animation.length;
-image(animation[index],0,150,320,240);
+image(animation[index],x-200,y-50,320,240);
+  
+  if (x >= 400){
+   x = 0; 
+  }
 }
 
-  
- dir = function (x, y) {
-    this.xspeed = x;
-    this.yspeed = y;
-  }
-
 function keyPressed() {
- if (keyCode === RIGHT_ARROW) {
-    hand.dir(1, 0);
-  } else if (keyCode === LEFT_ARROW) {
-    hand.dir(-1, 0);
+  if (keyCode === LEFT_ARROW) {
+    x = x - 5;
+  } else if (keyCode === RIGHT_ARROW) {
+    x = x + 5;
   }
 }
