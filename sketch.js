@@ -36,8 +36,8 @@ image(animation[index],x-200,y-50,320,240);
 
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
-    x = x - 5;
+    x = x - 10;
   } else if (keyCode === RIGHT_ARROW) {
-    x = x + 5;
+    x = x + 10;
   }
 }
