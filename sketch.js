@@ -2,7 +2,7 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-
+let dir;
 
 
 function preload(){
@@ -30,7 +30,7 @@ image(animation[index],0,150,320,240);
 }
 
   
-hand.dir = function (x, y) {
+ dir = function (x, y) {
     this.xspeed = x;
     this.yspeed = y;
   }
