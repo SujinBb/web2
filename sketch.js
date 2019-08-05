@@ -3,16 +3,16 @@ let spritesheet;
 let spritedata;
 let animation =[];
 let x =0;
-let y =200;
+let y =400;
 
 
 function preload(){
-  spritedata = loadJSON('handani.json');
-  spritesheet = loadImage('handani.png');
+  spritedata = loadJSON('handsp.json');
+  spritesheet = loadImage('handsp.png');
 }
 
 function setup() {
-createCanvas (1024,540);
+createCanvas (1400,700);
  let frames = spritedata.frames;
  for (let i = 0; i< frames.length; i++){
   let pos= frames [i].position;
@@ -27,7 +27,7 @@ function draw() {
 background(255);
 
 let index = floor (frameCount / 5) % animation.length;
-image(animation[index],x,y-50,320,240);
+image(animation[index],x,y,320,240);
   
   //if (x >= 400){
   // x = 0; 
