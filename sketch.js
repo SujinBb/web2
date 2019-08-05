@@ -26,8 +26,8 @@ console.log(animation);
 function draw() {
 background(255);
 
-let index = floor (frameCount / 7) % animation.length;
-image(animation[index],x,y,320,240);
+let index = floor (frameCount / 6) % animation.length;
+image(animation[index],x,y,300,240);
   
   //if (x >= 400){
   // x = 0; 
