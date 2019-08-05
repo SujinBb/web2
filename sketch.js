@@ -3,7 +3,7 @@ let spritesheet;
 let spritedata;
 let animation =[];
 let x =0;
-let y =300;
+let y =250;
 
 
 function preload(){
