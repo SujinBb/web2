@@ -2,7 +2,7 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
-let x =200;
+let x =0;
 let y =200;
 
 
@@ -27,11 +27,11 @@ function draw() {
 background(255);
 
 let index = floor (frameCount / 4) % animation.length;
-image(animation[index],x-200,y-50,320,240);
+image(animation[index],x,y-50,320,240);
   
-  if (x >= 400){
-   x = 0; 
-  }
+  //if (x >= 400){
+  // x = 0; 
+  //}
 }
 
 function keyPressed() {
