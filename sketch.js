@@ -30,9 +30,9 @@ image(animation[index],x,y,300,240);
 }
 
 function Hand(){
-this.jump = function() {
-      vy = -35;
- }
+//this.jump = function() {
+  //    vy = -35;
+ //}
   this.move= function() {
         y += vy;
         vy += gravity;
@@ -47,6 +47,6 @@ if (keyCode === LEFT_ARROW) {
  x = x + 30;
 }
  else if (key == ' ') {
-  hand.jump();
+  vy = -35;
  }
 }
