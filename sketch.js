@@ -31,7 +31,7 @@ image(animation[index],x,y,300,240);
 
 function Hand(){
 this.jump = function() {
-      this.vy = -35;
+      vy = -35;
  }
   this.move= function() {
         y += vy;
