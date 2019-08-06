@@ -3,7 +3,9 @@ let spritesheet;
 let spritedata;
 let animation =[];
 let x =0;
-let y =250;
+let y = height -100;
+let this.vy = 0;
+let this.gravity = 3;
 
 function preload(){
 spritedata = loadJSON('handsp.json');
@@ -28,21 +30,15 @@ image(animation[index],x,y,300,240);
 }
 
 function Hand(){
-  let this.r = 100;
-  let this.x = 50;
-  let this.y = height - this.r;
-  let this.vy = 0;
-  let this.gravity = 3;
-
-  this.jump = function() {
-        if (this.y == height - this.r) {
-          this.vy = -35;
-        }
-      }
+  
+//  this.jump = function() {
+        //  this.vy = -35;
+        
+    //  }
   this.move= function() {
-        this.y += this.vy;
+        y += this.vy;
         this.vy += this.gravity;
-        this.y = constrain(this.y, 0, height - this.r);
+        y = constrain(ty, 0, height - 100);
   }
 }
 
@@ -52,6 +48,6 @@ if (keyCode === LEFT_ARROW) {
 } else if (keyCode === RIGHT_ARROW) {
  x = x + 30;
  else if (key == ' ') {
-  hand.jump();
+  this.vy = -35;
  }
 }
