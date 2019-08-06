@@ -2,6 +2,7 @@ let hand;
 let spritesheet;
 let spritedata;
 let animation =[];
+let this.move;
 let x =0;
 let y = 300;
 let vy = 0;
@@ -29,15 +30,12 @@ let index = floor (frameCount / 6) % animation.length;
 image(animation[index],x,y,300,240);
 }
 
-function Hand(){
-//this.jump = function() {
-  //    vy = -35;
- //}
+
   this.move= function() {
         y += vy;
         vy += gravity;
         y = constrain(y, 0, 300);
-  }
+  
 }
 
 function keyPressed() {
