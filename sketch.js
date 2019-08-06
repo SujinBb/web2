@@ -47,6 +47,6 @@ if (keyCode === LEFT_ARROW) {
  x = x + 30;
 }
  else if (key == ' ') {
-  unicorn.jump();
+  hand.jump();
  }
 }
