@@ -1,4 +1,4 @@
-  let hand;
+        let hand;
 	let spritesheet;
 	let spritedata;
 	let animation =[];
