@@ -3,9 +3,9 @@ let spritesheet;
 let spritedata;
 let animation =[];
 let x =0;
-let y = height -100;
-let this.vy = 0;
-let this.gravity = 3;
+let y = 300;
+let vy = 0;
+let gravity = 3;
 
 function preload(){
 spritedata = loadJSON('handsp.json');
@@ -30,15 +30,13 @@ image(animation[index],x,y,300,240);
 }
 
 function Hand(){
-  
-//  this.jump = function() {
-        //  this.vy = -35;
-        
-    //  }
+this.jump = function() {
+      this.vy = -35;
+ }
   this.move= function() {
-        y += this.vy;
-        this.vy += this.gravity;
-        y = constrain(ty, 0, height - 100);
+        y += vy;
+        vy += gravity;
+        y = constrain(y, 0, 300);
   }
 }
 
@@ -47,7 +45,8 @@ if (keyCode === LEFT_ARROW) {
  x = x - 30;
 } else if (keyCode === RIGHT_ARROW) {
  x = x + 30;
+}
  else if (key == ' ') {
-  this.vy = -35;
+  unicorn.jump();
  }
 }
