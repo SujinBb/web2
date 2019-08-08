@@ -4,6 +4,7 @@
 	let animation =[];
 	let x = 0;
 	let y = 250;
+       let ractWidth;
 
 	function preload(){
 	  spritedata = loadJSON('handsp.json');
@@ -12,6 +13,7 @@
 
 	function setup() {
 	createCanvas (1400,700);
+         ractWidth = width / 4;
 	 let frames = spritedata.frames;
 	 for (let i = 0; i< frames.length; i++){
 	  let pos= frames [i].position;
@@ -33,6 +35,10 @@
 	    x = x - 30;
 	  } else if (keyCode === RIGHT_ARROW) {
 	    x = x + 30;
+    randFill_r = Math.floor(Math.random() * 255 + 1);
+    randFill_g = Math.floor(Math.random() * 255 + 1);
+    randFill_b = Math.floor(Math.random() * 255 + 1);
+    background(randFill_r, randFill_g, randFill_b);
 	  }
 	}
 
