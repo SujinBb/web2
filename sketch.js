@@ -22,7 +22,7 @@
 	}
 
 	function draw() {
-	background(255);
+	//background(255);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
 	  
