@@ -35,12 +35,10 @@
 	    x = x - 30;
 	  } else if (keyCode === RIGHT_ARROW) {
 	   x = x + 30;
-	  }
-     else if (keyCode === RIGHT_ARROW) {
-  randFill_r = Math.floor(Math.random() * 255 + 1);
-   randFill_g = Math.floor(Math.random() * 255 + 1);
-   randFill_b = Math.floor(Math.random() * 255 + 1);
-   background(randFill_r, randFill_g, randFill_b);
+          r = random(255+1);
+          g = random(255+1);
+          b = random(255+1);
+         background(r,g,b);
 	  }
 	}
 
