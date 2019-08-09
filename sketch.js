@@ -12,6 +12,10 @@
 
 	function setup() {
 	createCanvas (1400,700);
+	 r = random(255);
+          g = random(255);
+          b = random(255);
+		
 	 let frames = spritedata.frames;
 	 for (let i = 0; i< frames.length; i++){
 	  let pos= frames [i].position;
@@ -23,6 +27,7 @@
 
 	function draw() {
 	//background(255);
+	background(r,g,b);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
 	  
