@@ -35,9 +35,9 @@
 	    x = x - 30;
 	  } else if (keyCode === RIGHT_ARROW) {
 	   x = x + 30;
-          r = random(255+1);
-          g = random(255+1);
-          b = random(255+1);
+          r = random(255);
+          g = random(255);
+          b = random(255);
          background(r,g,b);
 	  }
 	}
