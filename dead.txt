@@ -39,10 +39,10 @@ Udanganyifu
 Làimhseachadh
 manipulácia
 Manipulacija
-      تاليف
-    دستکاری
+تاليف
+دستکاری
 හැසිරවීම
-    بمعالجة
+بمعالجة
 Մանիպուլյացիա
 Meðhöndlun
 Manipilasyon
@@ -59,7 +59,7 @@ Manipulyatsiya
 Маніпуляція
 Trin
 Mgbagha
-    מאַניפּיאַליישאַן
+מאַניפּיאַליישאַן
 Manipolazione
 Manipulasi
 そうさ
@@ -91,5 +91,5 @@ Manipulointi
 Manawai
 Rashin daidaituwa
 Manipuláció
-    מניפולציה
+מניפולציה
 जोड़-तोड़
