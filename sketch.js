@@ -6,6 +6,7 @@
 	let y = 250;
         let myText = [];
         let randomLineOfText;
+        let link;
       
 	function preload(){
          myText = loadStrings('dead.txt'); 
@@ -36,7 +37,7 @@
 	//background(r,g,b);
 	fill(0);
         textSize(150);
-        text(myText[randomLineOfText],width/2,height/2);
+        link = text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
 	
