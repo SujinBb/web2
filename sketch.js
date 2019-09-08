@@ -29,7 +29,7 @@
 	  let pos= frames [i].position;
 	  let img = spritesheet.get(pos.x,pos.y,pos.w,pos.h);
 	  animation.push(img);
-       link = createA("maipul1.html", "text");
+       link = createA("maipul1.html", "myText[randomLineOfText]");
 	 } 
 	}
 
