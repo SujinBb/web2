@@ -8,9 +8,10 @@
         let randomLineOfText;
 
 	function preload(){
+         myText = loadStrings('dead.txt'); 
 	  spritedata = loadJSON('handsp.json');
 	  spritesheet = loadImage('handsp.png');
-	  myText = loadStrings('dead.txt'); 
+	 
 	}
 
 	function setup() {
@@ -18,25 +19,26 @@
 	 r = random(255);
           g = random(255);
           b = random(255);
+        console.log(animation);
+       randomLineOfText = round(random(0,myText.length));
+        print(myText[randomLineOfText]);
+        textAlign(CENTER,CENTER); 
 	 let frames = spritedata.frames;
 	 for (let i = 0; i< frames.length; i++){
 	  let pos= frames [i].position;
 	  let img = spritesheet.get(pos.x,pos.y,pos.w,pos.h);
 	  animation.push(img);
-	 }
-	console.log(animation);
-randomLineOfText = round(random(0,myText.length));
-  print(myText[randomLineOfText]);
-  textAlign(CENTER,CENTER);  
+	 } 
 	}
 
 	function draw() {
 	//background(r,g,b);
+	fill(0);
+        textSize(100);
+        text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
-	fill(0);
-        textSize(50);
-        text(myText[randomLineOfText],width/2,height/2);
+	
 	}
 
 	function keyPressed() {
