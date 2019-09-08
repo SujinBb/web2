@@ -6,8 +6,7 @@
 	let y = 250;
         let myText = [];
         let randomLineOfText;
-        let link;
-
+      
 	function preload(){
          myText = loadStrings('dead.txt'); 
 	  spritedata = loadJSON('handsp.json');
