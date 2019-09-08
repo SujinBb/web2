@@ -50,6 +50,8 @@
           g = random(255);
           b = random(255);
           background(r,g,b);
+ randomLineOfText = floor(random(myText.length));
+  console.log(randomLineOfText);
 	  }
 	}
 
