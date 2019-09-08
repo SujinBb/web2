@@ -6,7 +6,7 @@
 	let y = 250;
         let myText = [];
         let randomLineOfText;
-        let link;
+        //let link;
       
 	function preload(){
          myText = loadStrings('dead.txt'); 
@@ -37,7 +37,8 @@
 	//background(r,g,b);
 	fill(0);
         textSize(150);
-        link = text(myText[randomLineOfText],width/2,height/2);
+        //link =
+	text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
 	
@@ -57,10 +58,10 @@
 	  }
 	}
 
-function mousePressed(){
-  if (mouseY == 120 && mouseX >= 110 && <= 130){ //range accounting for text length
-    link(mouse/manipul.html);
-  }
-}
+//function mousePressed(){
+// if (mouseY,mouseX){ //range accounting for text length
+//    link(mouse/manipul.html);
+ // }
+// }
 
 
