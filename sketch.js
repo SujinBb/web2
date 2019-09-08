@@ -57,4 +57,10 @@
 	  }
 	}
 
+function mousePressed(){
+  if (mouseY == 120 && mouseX >= 110 && <= 130){ //range accounting for text length
+    link(mouse/manipul.html);
+  }
+}
+
 
