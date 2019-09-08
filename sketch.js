@@ -20,6 +20,7 @@
 	 r = random(255);
           g = random(255);
           b = random(255);
+	link = createA("maipul1.html",text);
         console.log(animation);
        randomLineOfText = round(random(0,myText.length));
         print(myText[randomLineOfText]);
@@ -29,7 +30,7 @@
 	  let pos= frames [i].position;
 	  let img = spritesheet.get(pos.x,pos.y,pos.w,pos.h);
 	  animation.push(img);
-       link = createA("maipul1.html", myText[randomLineOfText]);
+       
 	 } 
 	}
 
