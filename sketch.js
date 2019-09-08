@@ -20,7 +20,7 @@
 	 r = random(255);
           g = random(255);
           b = random(255);
-	link = createA("maipul1.html",text);
+	link = createA("maipul1.html",[text]);
         console.log(animation);
        randomLineOfText = round(random(0,myText.length));
         print(myText[randomLineOfText]);
