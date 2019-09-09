@@ -6,7 +6,8 @@
 	let y = 250;
         let myText = [];
         let randomLineOfText;
-        //let link;
+        let link;
+        let _self;
       
 	function preload(){
          myText = loadStrings('dead.txt'); 
@@ -36,11 +37,10 @@
 	//background(r,g,b);
 	fill(0);
         textSize(150);
-	text(myText[randomLineOfText],width/2,height/2);
+	link = text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
 	}
-
 
 	function keyPressed() {
 	  if (keyCode === LEFT_ARROW) {
@@ -55,5 +55,9 @@
   console.log(randomLineOfText);
 	  }
 	}
+
+function mousePressed(){
+  window.open("mouse/manipul.html", _self);
+}
 
 
