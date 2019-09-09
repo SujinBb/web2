@@ -6,7 +6,7 @@
 	let y = 250;
         let myText = [];
         let randomLineOfText;
-        //let link;
+        let link;
       
 	function preload(){
          myText = loadStrings('dead.txt'); 
@@ -29,7 +29,7 @@
 	  let pos= frames [i].position;
 	  let img = spritesheet.get(pos.x,pos.y,pos.w,pos.h);
 	  animation.push(img);
-       
+       hand. cnv.mouseClicked(link); 
 	 } 
 	}
 
@@ -58,10 +58,8 @@
 	  }
 	}
 
-//function mousePressed(){
-// if (mouseY,mouseX){ //range accounting for text length
-//    link(mouse/manipul.html);
- // }
-// }
+function link() {
+  text(window.open('mouse/manipul.html'),'myText[randomLineOfText]', width/2, height/2);
+}
 
 
