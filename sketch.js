@@ -41,8 +41,12 @@
 	text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
-	
 	}
+
+
+       function link() {
+        text(window.open('mouse/manipul.html'),'myText[randomLineOfText]', width/2, height/2);
+          }
 
 	function keyPressed() {
 	  if (keyCode === LEFT_ARROW) {
@@ -57,9 +61,5 @@
   console.log(randomLineOfText);
 	  }
 	}
-
-function link() {
-  text(window.open('mouse/manipul.html'),'myText[randomLineOfText]', width/2, height/2);
-}
 
 
