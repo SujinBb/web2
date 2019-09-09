@@ -57,7 +57,7 @@
 	}
 
 function mousePressed(){
-  window.open("mouse/manipul.html", _self);
+  window.open("manipul.html", _self);
 }
 
 
