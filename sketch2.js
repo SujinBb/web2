@@ -50,7 +50,7 @@ function mousePressed(){
  //var d = dist(mouseX, mouseY,button);
 // if (d<5) { 
  //  window.open("manipul2.html", _self);
-  }
+ // }
 
 }
 
