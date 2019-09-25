@@ -40,6 +40,11 @@
 	link = text(myText[randomLineOfText],width/2,height/2);
 	let index = floor (frameCount / 6) % animation.length;
 	image(animation[index],x,y,300,240);
+	fill(0);
+	noStroke();	
+	 triangle(575,245, 630, 220, 630, 275);
+         triangle(830,275, 830, 220, 886, 245);
+		
 	}
 
 	function keyPressed() {
