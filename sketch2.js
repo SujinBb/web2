@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
- createCanvas(1400,800);
+ createCanvas(1300,800);
 
 }
 
@@ -35,7 +35,7 @@ function draw() {
  }
  fill(255);
  noStroke();
- button= triangle(1230,675, 1230, 620, 1286, 645);
+ //button= triangle(1230,675, 1230, 620, 1286, 645);
  
 }
 
@@ -47,9 +47,9 @@ function mousePressed(){
           g = random(255);
           b = random(255);
           background(r,g,b);
- var d = dist(mouseX, mouseY,button);
- if (d<5) { 
-   window.open("manipul2.html", _self);
+ //var d = dist(mouseX, mouseY,button);
+// if (d<5) { 
+ //  window.open("manipul2.html", _self);
   }
 
 }
