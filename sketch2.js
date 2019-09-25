@@ -16,7 +16,7 @@ function setup() {
   button.size(80,40);
   button.style("background-color","#fff");
   button.style("color","#000");
-  button.style("size","13");
+ button.style('font-size', '20px');
 
 }
 
