@@ -10,10 +10,10 @@ function preload() {
 }
 
 function setup() {
- createCanvas(1400,750);
+ createCanvas(1400,700);
   button = createButton('next')
   button.mousePressed(LinkClik);
-  button.position(1300,680);
+  button.position(1300,650);
   button.size(80,40);
   button.style("background-color","#fff");
   button.style("color","#000");
