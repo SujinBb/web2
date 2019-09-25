@@ -42,8 +42,8 @@
 	image(animation[index],x,y,300,240);
 	fill(0);
 	noStroke();	
-	 triangle(575,45, 630, 20, 630, 75);
-         triangle(830,75, 830, 20, 886, 45);
+	 triangle(575,50, 630, 25, 630, 80);
+         triangle(830,80, 830, 25, 886, 50);
 		
 	}
 
