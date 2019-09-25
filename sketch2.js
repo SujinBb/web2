@@ -1,6 +1,7 @@
 var bubbles =[];
 var manipulation = [];
 var button;
+var _self;
 
 function preload() {
  for (var i = 0; i<25; i++){
