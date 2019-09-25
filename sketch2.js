@@ -9,7 +9,14 @@ function preload() {
 }
 
 function setup() {
- createCanvas(1300,800);
+ createCanvas(1200,750);
+  button = createButton('next')
+  button.mousePressed(LinkClik);
+  button.position(1300,680);
+  button.size(80,40);
+  button.style("background-color","#fff");
+  button.style("color","#000");
+  button.style("size","13");
 
 }
 
@@ -51,6 +58,9 @@ function mousePressed(){
 // if (d<5) { 
  //  window.open("manipul2.html", _self);
  // }
+}
 
+function LinkClik(){
+ window.open("manipul2.html", _self);
 }
 
