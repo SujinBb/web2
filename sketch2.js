@@ -2,16 +2,14 @@ var bubbles =[];
 var manipulation = [];
 var button;
 
-
 function preload() {
  for (var i = 0; i<25; i++){
  manipulation[i] = loadImage('Image/MP'+ i + '.png');
- 
 }
 }
 
 function setup() {
- createCanvas(1300,800);
+ createCanvas(1400,800);
 
 }
 
