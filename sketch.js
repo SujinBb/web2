@@ -17,7 +17,7 @@
 	}
 
 	function setup() {
-	createCanvas (1400,700);
+	createCanvas (1400,680);
 	 r = random(255);
           g = random(255);
           b = random(255);
