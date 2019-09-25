@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
- createCanvas(1200,750);
+ createCanvas(1400,750);
   button = createButton('next')
   button.mousePressed(LinkClik);
   button.position(1300,680);
