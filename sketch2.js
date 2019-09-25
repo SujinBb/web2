@@ -47,10 +47,10 @@ function mousePressed(){
           g = random(255);
           b = random(255);
           background(r,g,b);
- // var d = dist(mouseX, mouseY,button);
-  //if (d<5) { 
-   // window.open("manipul.html", _self);
-  //}
+ var d = dist(mouseX, mouseY,button);
+ if (d<5) { 
+   window.open("manipul2.html", _self);
+  }
 
 }
 
