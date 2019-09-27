@@ -12,7 +12,7 @@ function setup() {
   background(255);
   randomLineOfText = round(random(0,myText.length));
   print(myText[randomLineOfText]);
-  textAlign(CENTER,CENTER);
+  textAlign(CENTER, TOP);
 
 }
 
