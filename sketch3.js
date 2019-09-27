@@ -4,7 +4,7 @@ var randomLineOfText;
 
 function preload() {
     myText = loadStrings('atikel.txt'); 
-  gif_createImg = createImg("manipul3.gif");
+  gif_createImg = createImg("manipul2.gif");
 }
 
 function setup() {
