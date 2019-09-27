@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   createCanvas(1400,700);
-  background(255);
+  background(0);
   randomLineOfText = round(random(0,myText.length));
   print(myText[randomLineOfText]);
   textAlign(CENTER,TOP);
@@ -19,11 +19,11 @@ function setup() {
 function draw() {
  gif_createImg.position(mouseX, mouseY - 66, mouseX, mouseY + 66);
  textSize(40);
-	text(myText[randomLineOfText],width/2,height/2);
+	text(myText[randomLineOfText],width/2,height/4);
 }
 
 function mousePressed(){
- background(255);
+ background(0);
   r = random(255);
  g = random(255);
  b = random(255);
