@@ -28,7 +28,7 @@ function Bubble(x,y,img){
 
     this.display = function(){
       imageMode(CENTER);
-      image(this.img,this.x,this.y,240,180);
+      image(this.img,this.x,this.y,280,200);
  }
     this.update = function(){
      this.x = this.x + random(-1,1);
@@ -37,7 +37,7 @@ function Bubble(x,y,img){
 }
 
 function draw() {
- for (var i = bubbles.length -1; i>=0; i--){
+  for (var i =0; i < bubbles.length;  i++){
   //bubbles[i].update();
   bubbles[i].display();
  }
