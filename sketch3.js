@@ -19,8 +19,8 @@ function setup() {
 function draw() {
  gif_createImg.position(mouseX, mouseY - 66, mouseX, mouseY + 66);
 frameRate(5);
- textSize(random(10,40));
-	text(myText[randomLineOfText],width/2,random(height));
+ textSize(random(10,70));
+text(myText[randomLineOfText],width/2,random(height));
 }
 
 function mousePressed(){
