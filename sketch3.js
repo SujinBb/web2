@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   createCanvas(1400,700);
-  background(0);
+  background(255);
   randomLineOfText = round(random(0,myText.length));
   print(myText[randomLineOfText]);
   textAlign(CENTER,TOP);
@@ -24,7 +24,7 @@ text(myText[randomLineOfText],width/2,random(height));
 }
 
 function mousePressed(){
- background(0);
+ background(255);
   r = random(255);
  g = random(255);
  b = random(255);
